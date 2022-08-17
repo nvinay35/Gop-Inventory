@@ -22,6 +22,7 @@ public with sharing class EmailManager {
         // In this class, the methods send only one email,
         // so we should have only one result.
         // Adding a comment for GIT comaprision test
+        // Adding a branch comment
         for (Messaging.SendEmailResult res : results) {
             if (res.isSuccess()) {
                 System.debug('Email sent successfully');
