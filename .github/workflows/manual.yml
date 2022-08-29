@@ -4,7 +4,7 @@ name: Deploy integration branch to integration and staging/uat orgs
 # Definition when the workflow should run
 on:
     push:
-      branches: [ integration ]
+      branches: vinayWork
       paths:
         - 'force-app/**'
             
@@ -41,7 +41,7 @@ jobs:
               shell: bash
               run: |
                   echo ${{ secrets.https://d2w00000aifj9eaf-dev-ed.lightning.force.com}} > ./https://d2w00000aifj9eaf-dev-ed.lightning.force.com.txt
-                  #echo ${{ secrets.SFDX_STAGING_URL}} > ./SFDX_STAGING_URL.txt
+                  #echo ${{ secrets.https://d2w00000aifj9eaf-dev-ed.lightning.force.com}} > ./https://d2w00000aifj9eaf-dev-ed.lightning.force.com.txt
 
             - name: 'Create delta packages for new, modified or deleted metadata'
               run: | 
