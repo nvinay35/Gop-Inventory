@@ -1,10 +1,10 @@
 # Unique name for this workflow
-name: Deploy Jira branch to Develop and UAT/STG orgs
+name: Deploy Jira branch to Develop
 
 # Definition when the workflow should run
 on:
     push:
-      branches: [ Jira---101 ]
+      branches: [ Jira_101 ]
       paths:
         - 'force-app/**'
             

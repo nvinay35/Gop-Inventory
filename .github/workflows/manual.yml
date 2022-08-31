@@ -133,6 +133,7 @@ jobs:
               shell: bash
               run: |
                   echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
+              # echo ${{ secrets.SFDX_UA_URL}} > ./SFDX_UA_URL.txt     
 
             # Authenticate to org using the URL stored in the text file
             - name: 'Authenticate to Integration Org'
@@ -182,3 +183,12 @@ jobs:
 
             - name: 'Deploy destructive changes (if any)'
               run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
+            # Authenticate to UA/STG org
+            #- name: 'Authenticate to Staging Org to UA/STG org'
+            #  run: sfdx auth:sfdxurl:store -f ./SFDX_UA_URL.txt -s -a staging
+
+            #- name: 'Deploy the entire branch'
+            #  run: sfdx force:source:deploy -p force-app --testlevel RunLocalTests --json
+
+            #- name: 'Deploy destructive changes (if any) to UA/STG org'
+            #  run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
