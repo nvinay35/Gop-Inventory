@@ -39,5 +39,5 @@ public virtual class BotMessage {
         this.imageURL = imageURL;
     }
 // Workflow testing
-
+// Test number 2
 }
