@@ -38,4 +38,5 @@ public virtual class BotMessage {
         this.messageText = messageText;
         this.imageURL = imageURL;
     }
+    // added comment to test workflow
 }
