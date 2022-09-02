@@ -67,12 +67,3 @@ jobs:
 
             #- name: 'Deploy destructive changes (if any) to Staging org'
             #  run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
-    action-pull-request:
-        runs-on: ubuntu-latest
-        steps:
-            source_branch: Jira_101
-            target_branch: develop
-            label: Jira 101 to Develop
-            draft: true
-            ignore_users: "dependabot"
-            get_diff: true
