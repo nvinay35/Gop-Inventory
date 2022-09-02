@@ -55,8 +55,8 @@ jobs:
             - name: 'Deploy the entire branch to Integration org'
               run: sfdx force:source:deploy -p force-app --testlevel RunLocalTests --json
 
-            - name: 'Deploy destructive changes (if any) to Integration org'
-              run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
+            #- name: 'Deploy destructive changes (if any) to Integration org'
+            #  run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
 
             # Authenticate to org
             #- name: 'Authenticate to Staging Org to Staging org'
@@ -67,3 +67,13 @@ jobs:
 
             #- name: 'Deploy destructive changes (if any) to Staging org'
             #  run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
+    action-pull-request:
+        runs-on: ubuntu-latest
+        steps:
+			      title: Automatic pull request
+            source_branch: Jira_101
+            target_branch: develop
+            label: Jira 101 to Develop
+            draft: true
+            ignore_users: "dependabot"
+            get_diff: true
