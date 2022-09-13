@@ -34,7 +34,4 @@ public with sharing class EmailManager {
         return sendResult;
     }
 }
-//Testing
-//Trailhead insknck
-//another comment
-// commented
+//Testing -Y
