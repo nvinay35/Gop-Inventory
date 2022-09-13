@@ -38,5 +38,5 @@ public virtual class BotMessage {
         this.messageText = messageText;
         this.imageURL = imageURL;
     }
-    //Testing another class
+    //Testing another class - y
 }
