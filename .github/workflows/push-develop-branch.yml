@@ -23,7 +23,7 @@ jobs:
           destination_branch: "develop"
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_label: "feature, automated pr"
-          pr_title: "[Example] Simple demo"
+          pr_title: "Changes for Review"
       # Install Salesforce CLI
       - name: 'Install Salesforce CLI'
         run: |
