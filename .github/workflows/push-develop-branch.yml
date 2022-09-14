@@ -18,7 +18,7 @@ jobs:
           sfdx-auth-url: ${{ secrets.SFDX_INTEGRATION_URL }}
       # Generate a pull request to develop    
       - name: Create Pull Request
-        uses: actions/create-pull-request@v3
+        uses: nvinay35/create-pull-request@v3
         with:
           title: 'Changes for review'
           body: >
