@@ -34,5 +34,4 @@ public with sharing class EmailManager {
         return sendResult;
     }
 }
-//Testing -Yes
-// One more time - yess
+
