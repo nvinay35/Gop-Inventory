@@ -21,6 +21,7 @@ jobs:
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "develop"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_label: "feature, automated pr"
           pr_title: "[Example] Simple demo"
       # Install Salesforce CLI
