@@ -38,7 +38,7 @@ jobs:
           echo y | sfdx plugins:install sfdx-git-delta
           sfdx plugins
           mkdir changed-sources
-          sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/ 
+          sfdx sgd:source:delta --to "HEAD" --from "HEAD~1" --output changed-sources/ --generate-delta --source force-app/ 
         #sudo npm install sfdx-git-delta@latest -g
         #git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
         #git fetch --all
