@@ -34,8 +34,4 @@ public with sharing class EmailManager {
         return sendResult;
     }
 }
-<<<<<<< HEAD
 //Testing 111
-=======
-
->>>>>>> 1ac95f4b5b62a43be0295049df21934471bc52f8
