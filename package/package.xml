@@ -5,9 +5,5 @@
         <members>ForgotPasswordController</members>
         <name>ApexClass</name>
     </types>
-    <types>
-        <members>push-develop-branch.yml</members>
-        <name>Workflow</name>
-    </types>
     <version>55.0</version>
 </Package>
