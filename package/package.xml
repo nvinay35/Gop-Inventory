@@ -2,9 +2,12 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>BotMessage</members>
-        <members>ChangePasswordController</members>
-        <members>ForgotPasswordController</members>
+        <members>BotTest</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>push-develop-branch.yml</members>
+        <name>Workflow</name>
     </types>
     <version>55.0</version>
 </Package>
