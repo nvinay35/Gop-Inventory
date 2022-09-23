@@ -48,3 +48,4 @@ jobs:
         run: sfdx force:source:deploy -x package/package.xml -l RunSpecifiedTests -r ChangePasswordControllerTest,ForgotPasswordControllerTest -w 33 --verbose --loglevel fatal
         #run: sfdx force:source:deploy -x package/package.xml --checkonly --testlevel RunLocalTests  --json
         #run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
+        #run: sfdx force:source:deploy --checkonly --sourcepath force-app --targetusername production-org --testlevel RunSpecifiedTests --runtests MyUnitTests

@@ -39,4 +39,3 @@ public virtual class BotMessage {
         this.imageURL = imageURL;
     }
 }
-//Test
